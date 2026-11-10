@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Smart Resume Builder</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div><p class="eyebrow">CAREER TOOLKIT</p><h1>Smart Resume Builder</h1><p>Create, preview and print a clean professional resume.</p></div><button id="printBtn" class="primary">Export / Print PDF</button></header>
+<main class="layout"><section class="panel"><h2>Your details</h2><form id="resumeForm">
+<label>Full name<input id="name" placeholder="Your name" value="Alex Morgan"></label>
+<label>Professional title<input id="role" placeholder="e.g. Web Developer" value="Aspiring Web Developer"></label>
+<label>Email<input id="email" type="email" placeholder="you@example.com" value="alex@example.com"></label>
+<label>Phone<input id="phone" placeholder="+91 98765 43210"></label>
+<label>Location<input id="location" placeholder="City, Country" value="Chennai, India"></label>
+<label>Professional summary<textarea id="summary" rows="4">Motivated student interested in building accessible, user-friendly web applications. Enjoys learning new technologies and solving practical problems.</textarea></label>
+<label>Education<textarea id="education" rows="3">B.Sc. / B.Tech — Your Institution\n2024–2027</textarea></label>
+<label>Skills<textarea id="skills" rows="3">HTML, CSS, JavaScript, Communication, Problem solving</textarea></label>
+<label>Projects<textarea id="experience" rows="4">Portfolio Website — Built a responsive personal portfolio using HTML, CSS and JavaScript.\nTask Tracker — Created a browser-based task manager with local storage.</textarea></label>
+</form><div class="suggestions"><h3>Resume improvement suggestions</h3><p class="muted">Rule-based suggestions for this demo. No external AI API or personal data transmission is used.</p><ul id="tips"><li>Enter your details to receive suggestions.</li></ul></div></section>
+<section class="preview-wrap"><div class="preview" id="preview"><div class="resume-head"><h1 id="pName">Alex Morgan</h1><h3 id="pRole">Aspiring Web Developer</h3><p id="pContact">alex@example.com · Chennai, India</p></div><section><h2>Profile</h2><p id="pSummary"></p></section><section><h2>Education</h2><p id="pEducation"></p></section><section><h2>Skills</h2><p id="pSkills"></p></section><section><h2>Projects & Experience</h2><p id="pExperience"></p></section></div></section></main>
+<footer>Smart Resume Builder · Demo project · Your entries remain in this browser.</footer><script src="script.js"></script></body></html>
